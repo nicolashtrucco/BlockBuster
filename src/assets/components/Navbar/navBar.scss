@@ -1,0 +1,89 @@
+header {
+    background-color: #001f54;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 2rem 0;
+    position: fixed;  
+    top: 0;           
+    left: 0;          
+    right: 0;         
+    z-index: 100;     
+
+    .navBar-Container {
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .navBar-Logo {
+                img {
+                    width: 200px;
+                    cursor: pointer;
+                }
+            }
+
+            .navBar-Links {
+                display: flex;
+
+                li {
+                    list-style: none;
+                    margin: 0 0.5rem;
+                    a {
+                        color: #e7ecef;
+                        font-size: 1.3rem;
+                        padding: 0.7rem 1rem;
+                        display: block;
+                        text-decoration: none;
+                        transition: 0.2s;
+                        border-radius: 4px;
+                    }
+                    & .navBar-active {
+                        background-color: #00399b;
+                    }
+                }
+            }
+
+            .navBar-Icon {
+                font-size: 1.5rem;
+                cursor: pointer;
+                display: none;
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        .navBar-Container {
+            nav {
+                .navBar-Links {
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    background-color: #012a70;
+                    position: absolute;
+                    width: 350px;
+                    height: 55vh;
+                    top: 102px;
+                    right: 0;
+                    text-align: center;
+                    transition: 0.5s ease-in-out;
+                    z-index: 1;
+                }
+
+                .active {
+                    right: -800px;
+                }
+
+                .navBar-Icon {
+                    display: block;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
