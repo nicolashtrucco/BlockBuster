@@ -1,0 +1,38 @@
+.footer-creditosContainer {
+    padding: 10px 300px;
+    background-color: #000000;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    P {
+        font-size: 0.9rem;
+        color: #ffffff9c;
+        text-align: center;
+
+        span {
+            color: #ffffff;
+        }
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            color: #ffffff;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-creditosContainer {
+        padding: 10px 50px;
+        flex-wrap: wrap;
+        P {
+            font-size: 0.8rem;
+        }
+    }
+}

@@ -2,7 +2,7 @@
 import "../Navbar/navBar.scss";
 import { NavLink, Link } from "react-router-dom";
 import Logo from "../../../img/LogoBlockBuster.png";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes  } from "react-icons/fa";
 import { useState } from "react";
 const NavBar = () => {
 
@@ -36,7 +36,8 @@ const NavBar = () => {
                   </li>
                </ul>
                <div className="navBar-Icon" onClick={toggleMenu}>
-                  <FaBars />
+                  {isOpen ? <FaBars /> : <FaTimes />}
+                  
                </div>
             </nav>
          </div>

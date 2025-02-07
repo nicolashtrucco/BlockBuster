@@ -1,4 +1,3 @@
-import '../Inicio/inicioContainer.scss'
 import InicioMain from './InicioMain'
 import InicioHeader from './InicioHeader'
 
