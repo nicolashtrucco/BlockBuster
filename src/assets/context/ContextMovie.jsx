@@ -1,11 +1,12 @@
 /** @format */
 
 import { createContext, useState, useEffect } from "react";
+import { apiKey } from "./ApiKeyMovie";
 
 const MovieContext = createContext();
 
 const MovieProvider = ({ children }) => {
-   const apiKey = "3ea47d3c800bf82fca2e63547e872c63";
+   // const apiKey = "3ea47d3c800bf82fca2e63547e872c63";
    const [data, setData] = useState({})
 
    useEffect(() => {
