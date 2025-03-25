@@ -10,8 +10,10 @@ const ButtonPage = () => {
 
     const handleButtonNextPage = () => {
         setPage(page + 1)
+        window.scrollTo({ top: 0, behavior: "smooth" }); //* Va al inicio de la página
     }
     const handleButtonPrevPage = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" }); //* Va al inicio de la página	
         if(page <= 1){
             setPage(1)
         } else {

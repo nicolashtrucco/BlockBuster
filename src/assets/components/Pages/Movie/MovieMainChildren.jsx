@@ -34,7 +34,7 @@ const MovieMainChildren = ({ filter, handleSearchTerm, filterMovie }) => {
                         />
                         <h2>{movie.title}</h2>
                         <p className="movieMain-p">{movie.overview}</p>
-                        <Link to={""}>Ver Más</Link>
+                        <Link onClick={() => console.log(`ID de la película: ${movie.id}`)} to={`/movies/${movie.id}`}>Ver Más</Link>
                      </div>
                   ))
                ) : data.results === undefined ? (

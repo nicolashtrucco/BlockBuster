@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Loading from "../../Loading/Loading";
 
 const InicioMain = () => {
-   const { data, setPage } = useContext(MovieContext);
+   const { data } = useContext(MovieContext);
 
    // setPage(3)
    return (
@@ -27,7 +27,7 @@ const InicioMain = () => {
                            />
                            <h2>{movie.title}</h2>
                            <p className="inicioMain-p">{movie.overview}</p>
-                           <Link to={""}>Ver Mas</Link>
+                           <Link onClick={() => console.log(`ID de la película: ${movie.id}`)} to={`/movies/${movie.id}`}>Ver Más</Link>
                         </div>
                      ))
                   ) : (

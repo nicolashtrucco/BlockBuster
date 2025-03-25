@@ -14,7 +14,7 @@ const MovieMain = () => {
    const handleSearchTerm = () => {
       setQuery(filter.toLowerCase());
       setFilter("");
-   };
+   };    
 
    return (
       <>

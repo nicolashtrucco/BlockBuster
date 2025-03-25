@@ -25,8 +25,7 @@ const MovieProvider = ({ children }) => {
             if (response.ok) {
                const dataApi = await response.json();
                setData(dataApi);
-               // console.log(Object.entries(data));
-               // console.log(data);
+               // console.log(dataApi);
             } else {
                console.log(`Error: ${response.statusText}`);
             }
